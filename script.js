@@ -6,7 +6,7 @@ function toggleNav() {
     hamburgerIcon.classList.toggle("hamburger-icon-active");
   }
   
-  var textArray = ["Gozo", "AyItsMe", "Rank 1 Xerath Oce", "Adam Wyatt"];
+  var textArray = ["Gozo", "AyItsMe", "Rank 1 Xerath OCE", "Adam Wyatt"];
   var typingIndex = 0;
   var typingElement = document.getElementById("typing");
   var typingAnimation = typingElement.style.animation;
@@ -66,4 +66,5 @@ function toggleNav() {
   
   // Start typing the first word
   typeText();
+  
   

@@ -4,6 +4,10 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  main {
+    padding: 120px;
+  }
   
   body {
     font-family: Arial, sans-serif;
@@ -19,6 +23,9 @@
     justify-content: center;
     text-align: center;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
   }
 
   .header-text {
@@ -104,12 +111,8 @@
   .hamburger-icon-active .line:nth-child(3) {
     transform: translateY(-10px) rotate(-45deg);
   }
-  
-  /* Main content */
-  main {
-    padding: 2rem;
-  }
 
+  /* Typing Effect */
   #typing {
     text-align: center;
     margin: 0;
@@ -149,3 +152,46 @@
     }
   }
   
+  /* Fade up Effect */
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-up {
+    animation-name: fadeUp;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  .code-font {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+  }
+
+  .info-textbox {
+    font-size: 18px;
+    max-width: 800px;
+  }
+
+  .highlight {
+    font-weight: bold;
+    color: #bd93f9;
+  }
+
+  .no-color-change {
+    color: inherit;
+  }
+
+  .no-color-change:hover {
+    color:#a465fc;
+  }
