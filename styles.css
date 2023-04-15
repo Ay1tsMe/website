@@ -122,7 +122,7 @@
     font-weight: bold;
     color: #fff;
     overflow: hidden;
-    border-right: 20px solid #fff;
+    border-right: 15px solid #fff;
     white-space: nowrap;
     letter-spacing: 4px;
     animation: typing 1s steps(20, end), blink-caret .75s step-end infinite;
@@ -183,6 +183,7 @@
     max-width: 800px;
   }
 
+  /* Highlight Properties */
   .highlight {
     font-weight: bold;
     color: #bd93f9;
@@ -195,3 +196,23 @@
   .no-color-change:hover {
     color:#a465fc;
   }
+
+  /* Button Properties */
+  .contact-button {
+    margin-top: 50px;
+    background-color: transparent;
+    border: 2px solid #a465fc;
+    border-radius: 10px;
+    color: #a465fc;
+    cursor: pointer;
+    font-size: 18px;
+    width: 250px;
+    height: 60px;
+    transition: background-color 0.3s ease, color 0.3 ease;
+  }
+
+  .contact-button:hover {
+    background-color: #a465fc;
+    color: #282a36;
+  }
+  
