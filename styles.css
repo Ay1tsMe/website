@@ -164,6 +164,10 @@
     }
   }
   
+  .fade-up-object {
+
+  }
+
   .fade-up {
     animation-name: fadeUp;
     animation-duration: 0.5s;
@@ -214,5 +218,61 @@
   .contact-button:hover {
     background-color: #a465fc;
     color: #282a36;
+  }
+
+  /* Profile Button Properties */
+  .profile-buttons{
+    margin: 120px;
+    background-color: transparent;
+    border: 2px solid #a465fc;
+    border-radius: 10px;
+    color: #a465fc;
+    cursor: pointer;
+    font-size: 24px;
+    width: 300px;
+    height: 100px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .profile-buttons:hover {
+    background-color: #a465fc;
+    color: #282a36;
+  }
+  
+  /* Align Text to the right */
+  .align-right {
+    text-align: right;
+    margin-left: 700px;
+    
+  }
+
+  /* Header Properties */
+  .starting-header {
+    margin-top: 350px;
+  }
+
+  .faq-header {
+    margin-bottom: 10px;
+    margin-top: 30px;
+  }
+
+  /* Center text */
+  .text-center {
+    text-align: center;
+  }
+
+  /* No colour or highlights on links */
+  .dull-link{
+    text-decoration: none;
+    color: inherit;
+  }
+
+  /* Discord button text */
+  .discord:after{
+    content: "Discord";
+  }
+
+  .discord:hover::after{
+    content: "SammySam#2719";
   }
   
