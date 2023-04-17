@@ -276,3 +276,26 @@
     content: "SammySam#2719";
   }
   
+  #FAQ {
+    position: relative;
+    top: -100px;
+  }
+
+  #important-links {
+    position: relative;
+    top: -100px;
+  }
+
+  .slideshow-profile {
+    position: absolute;
+    left: 200px;
+    bottom: -630px; 
+    width: 368px;
+    height: 368px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .slideshow-profile:first-child {
+    opacity: 1;
+  }
