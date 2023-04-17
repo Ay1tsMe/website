@@ -98,3 +98,26 @@ copyButton.addEventListener('click', () => {
     console.error('Failed to copy: ', err);
   });
 });
+
+
+// Smooth scrolling effect
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+
+
+// Fade in and out Profile images
+const images = document.querySelectorAll('.slideshow-profile');
+let currentIndex = 0;
+
+setInterval(() => {
+  images[currentIndex].style.opacity = 0;
+  currentIndex = (currentIndex + 1) % images.length;
+  images[currentIndex].style.opacity = 1;
+}, 3000);
